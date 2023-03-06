@@ -1,7 +1,7 @@
 <div class="header-back"></div>
 <header> 
     <div class="navigation">
-    <h1>Gelato</h1>
+    <h1 class="site-title">Gelato</h1>
     <nav class="menu">
         <?php
         wp_nav_menu (['theme_location' => 'primary-menu']);

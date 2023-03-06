@@ -13,12 +13,12 @@
 function theme_scripts_and_styles()
 {
     // Load CSS Reset
-    wp_enqueue_style(
-        'css-reset',
-        'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css',
-        [],
-        null
-    );
+    // wp_enqueue_style(
+    //     'css-reset',
+    //     'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css',
+    //     [],
+    //     null
+    // );
     // Load in Google Fonts
     wp_enqueue_style(
         'google-fonts',
@@ -36,21 +36,21 @@ function theme_scripts_and_styles()
         'all' // media
     );
 
-    wp_enqueue_script(
-        'tailwind', // name of the script
-        'https://cdn.tailwindcss.com',
-        [], // dependencies
-        null, // version number
-        false // load in footer
-    );
+    // wp_enqueue_script(
+    //     'tailwind', // name of the script
+    //     'https://cdn.tailwindcss.com',
+    //     [], // dependencies
+    //     null, // version number
+    //     false // load in footer
+    // );
     // Enable first-party plugins, like forms and typography, using the plugins query parameter.
-    wp_enqueue_script(
-        'tailwind-plugins', // name of the script
-        'https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"',
-        [], // dependencies
-        null, // version number
-        false // load in footer
-    );
+    // wp_enqueue_script(
+    //     'tailwind-plugins', // name of the script
+    //     'https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"',
+    //     [], // dependencies
+    //     null, // version number
+    //     false // load in footer
+    // );
     wp_enqueue_script(
         'idm250-scripts', // name of the script
         get_template_directory_uri() . '/dist/scripts/main.js', // http://localhost:250/wp-content/themes/idm250-theme-02/dist/scripts/main.js
@@ -101,43 +101,65 @@ function get_theme_menu($menu_name)
 }
 
 /**
+ * Register custom taxonomies
+ * @link https://developer.wordpress.org/reference/functions/register_taxonomy/
+ * @return void
+ */
+function register_custom_taxonomies()
+{
+    $args = [
+        'labels' => [
+            'name' => 'Flavor Categories',
+            'singular_name' => 'Flavor Category',
+            'search_items' => 'Search Flavor Categories',
+            'all_items' => 'All Flavor Categories',
+            'parent_item' => 'Parent Flavor Category',
+            'parent_item_colon' => 'Parent Flavor Type:',
+            'edit_item' => 'Edit Flavor Category',
+            'update_item' => 'Update Flavor Category',
+            'add_new_item' => 'Add New Flavor Category',
+            'new_item_name' => 'New Flavor Type Name',
+            'menu_name' => 'Flavor Categories',
+        ],
+        'hierarchical' => true,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'query_var' => true,
+        'rewrite' => ['slug' => 'Flavor/categories'],
+        'show_in_rest' => true,
+    ];
+
+    $taxonomy_name = 'Flavor-categories'; // name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces).
+    $taxonomy_association = ['Flavors']; // post types to associate with this taxonomy
+    register_taxonomy($taxonomy_name, $taxonomy_association, $args);
+}
+add_action('init', 'register_custom_taxonomies');
+
+
+/**
  * Function to register custom post types
  * @link https://developer.wordpress.org/reference/functions/register_post_type/
  * @return void
  */
 function register_custom_post_types()
 {
-    // Register Gelato post type
-    register_post_type(
-        'Gelato',
-        [
-            'labels' => [
-                'name' => __('Gelato'),
-                'singular_name' => __('Gelato')
-            ],
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => ['slug' => 'Gelato'],
-            'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
-            'show_in_rest' => true,
-            'menu_position' => 5,
-        ]
-    );
-    register_post_type(
-        'events',
-        [
-            'labels' => [
-                'name' => __('Events'),
-                'singular_name' => __('event')
-            ],
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => ['slug' => 'events'],
-            'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
-            'show_in_rest' => true,
-            'menu_position' => 5,
-        ]
-    );
+    $arg = [
+        'labels' => [
+            'name' => 'Flavors',
+            'singular_name' => 'Flavor',
+        ],
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => ['slug' => 'flavors'],
+        'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
+        'menu_position' => 5,
+        'taxonomies' => ['flavor-categories'], // Name of custom taxonomy. Only need if you have a custom taxonomy
+        'show_in_rest' => true,
+    ];
+    $post_type_name = 'flavors';
+
+    // Register Albums post type
+    register_post_type($post_type_name, $arg);
 }
 
 add_action('init', 'register_custom_post_types');
