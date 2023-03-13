@@ -115,3 +115,14 @@ nav {
     padding: 0rem;
     margin: 0rem;
 }
+
+.error-img {
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+}
+
+.error-text {
+    display: flex; 
+    justify-content: center; 
+}
