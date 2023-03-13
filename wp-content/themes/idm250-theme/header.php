@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.typekit.net/nxx5hnk.css">
   <link rel="stylesheet" href="dist/styles/main.css">
-  <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/dist/images/favicon.png">
+  <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/dist/images/melted1.png">
   <title>Gelato</title>
   <?php wp_head(); ?>
 </head>
