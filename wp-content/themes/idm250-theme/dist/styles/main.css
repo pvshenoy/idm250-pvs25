@@ -2,6 +2,7 @@ body {
     font-family: "gelica", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin: 0rem 5rem;
 }
 
 
@@ -120,9 +121,14 @@ nav {
     display: flex; 
     justify-content: center;
     width: 100%;
+    z-index: 1;
 }
 
 .error-text {
     display: flex; 
     justify-content: center; 
+}
+
+.border {
+    border: 3px solid #1B0203;
 }
