@@ -12,6 +12,7 @@ h1 {
 h2 {
     font-weight: 500;
     font-size: 1.75rem; 
+    margin: 1rem 0rem;
 }
 
 h3 {
@@ -89,13 +90,13 @@ a:active {
 
 ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     list-style-type: none;
 }
 
 .menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     list-style-type: none;
 }
 
@@ -153,4 +154,22 @@ ul {
     background-color: #AF9164;
     border-radius: .25rem;
     padding: calc(0.667em + 2px) calc(1.333em + 2px);
+}
+
+/* FEATURED-BLOCK.PHP  */
+
+.biography {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3rem auto;
+}
+
+.biography-img {
+    margin: 2rem;
+    width: 20rem;
+}
+
+.bio-text {
+    margin: 1rem 2rem 0rem 0rem;
 }
