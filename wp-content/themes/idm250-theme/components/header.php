@@ -1,6 +1,6 @@
 <header> 
 <div class="header-desktop">
-    <h3 class="site-title">gelato</h3>
+    <a href="<?php echo '$home'?>"><h3 class="site-title">gelato</h3></a>
     <nav class="desktop-nav">
         <?php
         wp_nav_menu (['theme_location' => 'primary-menu']);
