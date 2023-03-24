@@ -13,12 +13,20 @@
 function theme_scripts_and_styles()
 {
     // Load CSS Reset
-    // wp_enqueue_style(
-    //     'css-reset',
-    //     'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css',
-    //     [],
-    //     null
-    // );
+    wp_enqueue_style(
+        'css-reset',
+        'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css',
+        [],
+        null
+    );
+
+    // Adobe font
+    wp_enqueue_style(
+        'adobe-fonts',
+        'https://use.typekit.net/nxx5hnk.css',
+        [],
+        null
+    );
     // Load in Google Fonts
     wp_enqueue_style(
         'google-fonts',
@@ -91,6 +99,7 @@ add_action('init', 'register_theme_menus');
  * @param string $menu_name - Name of the registered menu id
  * @return array $menu_items - Array of WP_Post objects.
  */
+
 function get_theme_menu($menu_name)
 {
     // Get menu items as a flat array
