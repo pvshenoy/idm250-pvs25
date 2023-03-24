@@ -2,6 +2,7 @@ body {
     font-family: "gelica", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #1B0203;
 }
 
 h1 {
@@ -17,22 +18,26 @@ h2 {
 
 h3 {
     font-weight: 500;
-    font-size: 1.25rem;  
+    font-size: 1.25rem;
+    margin: 1rem 0rem;  
 }
 
 h4 {
     font-size: 1rem;
     font-weight: 500;
+    margin: 1rem 0rem;
 }
 
 h5 {
     font-size: .75rem;
     font-weight: 500;
+    margin: .5rem 0rem;
 }
 
 h6 {
     font-size: 1rem;
     font-weight: 500;
+    margin: .5rem 0rem;
 }
 
 a {
@@ -126,15 +131,13 @@ ul {
 
 /* HERO-HOME.PHP */
 
-.hero-image {
-    height: 100vh;
-    background-image: url('../images/hero.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .hero-text {
     padding: 4rem 0rem 1rem 4rem;
+    color: #EFDED5;
+}
+
+.hero-description {
+    padding: 1rem 0rem 1rem 4rem;
     color: #EFDED5;
 }
 
@@ -157,13 +160,6 @@ ul {
 }
 
 /* FEATURED-BLOCK.PHP  */
-
-.biography {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 3rem auto;
-}
 
 .biography-img {
     margin: 2rem;
