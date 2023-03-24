@@ -72,6 +72,8 @@ a:active {
     z-index: 1000;
 }
 
+/* local styling  */
+
 .menu {
     display: flex;
     flex-direction: row;
@@ -79,6 +81,20 @@ a:active {
 }
 
 .menu-item {
+    font-size: 1rem;
+    /* text-transform: uppercase; */
+    margin: .2rem 2rem 0rem 2rem;
+}
+
+/* prod styling  */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.page-item {
     font-size: 1rem;
     /* text-transform: uppercase; */
     margin: .2rem 2rem 0rem 2rem;
