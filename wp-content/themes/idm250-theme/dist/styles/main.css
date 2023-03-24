@@ -87,6 +87,12 @@ a:active {
 
 /* prod styling  */
 
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
 .menu {
     display: flex;
     flex-direction: row;
