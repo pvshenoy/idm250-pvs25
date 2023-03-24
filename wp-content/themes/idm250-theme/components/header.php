@@ -6,8 +6,8 @@
         wp_nav_menu (['theme_location' => 'primary-menu']);
         ?>
     </nav>
-    <hr class="nav-linebreak">
 </div>
+<hr class="nav-linebreak">
 
 
 
