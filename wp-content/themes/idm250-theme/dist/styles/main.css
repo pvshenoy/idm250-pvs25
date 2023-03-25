@@ -149,7 +149,7 @@ ol {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: fit-content;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -164,6 +164,10 @@ ol {
   .dropdown-content a:hover {background-color: #EFDED5}
   
   .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .menu:hover .dropdown-content {
     display: block;
   }
   
@@ -181,7 +185,7 @@ ol {
 
 .menu-item {
     font-size: 1rem;
-    margin: .2rem 2rem 0rem 2rem;
+    margin: 0rem;
 }
 
 /* prod styling  */
@@ -322,6 +326,11 @@ ol {
         display: flex;
         flex-direction: row;
         list-style-type: none;
+    }
+
+    .menu-item {
+        font-size: 1rem;
+        margin: .2rem 2rem 0rem 2rem;
     }
 
 
