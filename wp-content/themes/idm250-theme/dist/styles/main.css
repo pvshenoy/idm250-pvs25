@@ -3,6 +3,7 @@ body {
     font-weight: 400;
     font-style: normal;
     color: #1B0203;
+    margin: 0rem;
 }
 
 h1 {
@@ -69,7 +70,7 @@ ul {
 }
 
 ol {
-    list-style-type: circle;
+    list-style-type: decimal;
 }
 
 .top-margin {
@@ -197,4 +198,14 @@ ol {
 
 .bio-text {
     margin: 1rem 2rem 0rem 0rem;
+}
+
+/* MINT PAGE  */
+
+.flavor-details {
+    margin: 2rem 4rem;
+}
+
+.flavor-part-two {
+    margin: 0rem 4rem;
 }
