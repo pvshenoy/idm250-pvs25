@@ -222,6 +222,10 @@ ol {
 
 /* STRAWBERRY  */
 
+.strawberry-margin {
+    margin: 2rem 4rem 0rem 4rem;
+}
+
 .col-one {
     margin: 2rem 0rem 0rem 4rem;
 }
