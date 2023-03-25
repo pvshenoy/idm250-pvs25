@@ -1,11 +1,11 @@
 <header> 
 <div class="header-desktop">
     <a href="<?php echo '$home'?>"><h3 class="site-title">gelato</h3></a>
-    <nav class="desktop-nav">
+    <ul class="desktop-nav">
         <?php
         wp_nav_menu (['theme_location' => 'primary-menu']);
         ?>
-    </nav>
+    </ul>
 </div>
 <hr class="nav-linebreak">
 

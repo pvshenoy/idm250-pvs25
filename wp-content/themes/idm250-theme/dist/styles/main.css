@@ -13,31 +13,31 @@ h1 {
 h2 {
     font-weight: 500;
     font-size: 1.75rem; 
-    margin: 1rem 0rem;
+    /* margin: 1rem 0rem; */
 }
 
 h3 {
     font-weight: 500;
     font-size: 1.25rem;
-    margin: 1rem 0rem;  
+    /* margin: 1rem 0rem;   */
 }
 
 h4 {
     font-size: 1rem;
     font-weight: 500;
-    margin: 1rem 0rem;
+    /* margin: 1rem 0rem; */
 }
 
 h5 {
     font-size: .75rem;
     font-weight: 500;
-    margin: .5rem 0rem;
+    /* margin: .5rem 0rem; */
 }
 
 h6 {
     font-size: 1rem;
     font-weight: 500;
-    margin: .5rem 0rem;
+    /* margin: .5rem 0rem; */
 }
 
 a {
@@ -93,15 +93,15 @@ a:active {
 
 /* prod styling  */
 
-ul {
+.desktop-nav {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     list-style-type: none;
 }
 
 .menu {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     list-style-type: none;
 }
 

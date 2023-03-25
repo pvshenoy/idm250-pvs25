@@ -13,12 +13,12 @@
 function theme_scripts_and_styles()
 {
     // Load CSS Reset
-    // wp_enqueue_style(
-    //     'css-reset',
-    //     'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css',
-    //     [],
-    //     null
-    // );
+    wp_enqueue_style(
+        'css-reset',
+        'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css',
+        [],
+        null
+    );
 
     // Adobe font
     wp_enqueue_style(
