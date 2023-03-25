@@ -145,6 +145,10 @@ ol {
     border: 1px solid #1B0203;
 }
 
+.hero-size {
+    margin: 3rem 4rem;
+}
+
 /* 404 PAGE  */
 
 .error-img {
