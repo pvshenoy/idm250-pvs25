@@ -190,11 +190,6 @@ ol {
 
 /* prod styling  */
 
-.menu {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-}
 
 .page_item {
     font-size: 1rem;
