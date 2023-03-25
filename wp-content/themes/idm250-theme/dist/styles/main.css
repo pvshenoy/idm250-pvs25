@@ -153,6 +153,11 @@ ol {
     display: flex;
     justify-content: center;
 }
+
+.footer-content {
+    display: flex;
+    justify-content: center; 
+}
 /* 404 PAGE  */
 
 .error-img {
