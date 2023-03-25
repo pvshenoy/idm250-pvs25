@@ -1,3 +1,4 @@
+<hr class="nav-linebreak">
 <footer>
   <div class="footer">
   <?php wp_nav_menu(['theme_location' => 'footer-menu']);?>
