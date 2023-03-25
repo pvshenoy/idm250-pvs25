@@ -97,6 +97,11 @@ ol {
     margin: auto;
 }
 
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
 /* MENU STYLING  */
 
 .site-title {
