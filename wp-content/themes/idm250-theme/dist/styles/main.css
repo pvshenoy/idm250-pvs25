@@ -166,13 +166,19 @@ ol {
 /* HERO-HOME.PHP */
 
 .hero-text {
+    margin: 0rem;
     padding: 4rem 0rem 1rem 4rem;
     color: #EFDED5;
 }
 
 .hero-description {
     padding: 1rem 0rem 1rem 4rem;
+    max-width: 50vw;
     color: #EFDED5;
+}
+
+.hero-button {
+    margin-left: 4rem;
 }
 
 .homepage-title {
