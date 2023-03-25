@@ -61,6 +61,44 @@ a:active {
     color: #92C3EF;
 }
 
+/* DEFAULT STYLES  */
+
+ul {
+    list-style-type: circle;
+}
+
+ol {
+    list-style-type: circle;
+}
+
+img {
+    margin: 1rem;
+}
+
+.top-margin {
+    margin-top: 1rem;
+}
+
+.right-margin {
+    margin-right: 1rem;
+}
+
+.left-margin {
+    margin-left: 1rem;
+}
+
+.bottom-margin {
+    margin-bottom: 1rem;
+}
+
+.equal-margin {
+    margin: 1rem;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
 /* MENU STYLING  */
 
 .site-title {
@@ -92,12 +130,6 @@ a:active {
 }
 
 /* prod styling  */
-
-.desktop-nav {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-}
 
 .menu {
     display: flex;
