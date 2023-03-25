@@ -149,6 +149,10 @@ ol {
     margin: 3rem 4rem;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+}
 /* 404 PAGE  */
 
 .error-img {
