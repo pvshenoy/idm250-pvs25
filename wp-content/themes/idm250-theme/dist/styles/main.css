@@ -175,7 +175,7 @@ ol {
 
 .menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     list-style-type: none;
 }
 
@@ -318,6 +318,11 @@ ol {
         display: none;
     }
     
+    .menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
 
 
 }
