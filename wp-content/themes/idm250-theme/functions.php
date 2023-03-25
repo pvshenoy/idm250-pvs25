@@ -87,6 +87,7 @@ function register_theme_menus()
     register_nav_menus(
         [
             'primary-menu' => 'Primary Menu',
+            'mobile-menu' => 'Mobile Menu',
             'footer-menu' => 'Footer Menu'
         ]
     );

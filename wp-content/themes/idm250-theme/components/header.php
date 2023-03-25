@@ -9,7 +9,21 @@
 </div>
 <hr class="nav-linebreak">
 
-
+<div class="header-mobile">
+<a href="<?php echo '$home'?>"><h2 class="site-title">gelato</h2></a>
+  <div class="dropdown">
+  <button class="dropbtn">MENU</button>
+  <div class="dropdown-content">
+  <?php
+        wp_nav_menu (['theme_location' => 'mobile-menu']);
+        ?>
+  <!-- <a href="#"></a>
+  <a href="#"></a>
+  <a href="#"></a> -->
+  </div>
+  </div>
+</div>
+<hr class="nav-linebreak mobile">
 
 
 
